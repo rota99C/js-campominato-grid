@@ -8,11 +8,43 @@
 body {
     background-color: silver;
 
+
+}
+
+main {
+    margin: auto;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+main>H1 {
+    margin-right: 50PX;
+}
+
+main>button{
+    margin-right: 20px;
 }
 
 .container_1 {
     width: 1000px;
     min-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container_2 {
+    width: 900px;
+    min-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container_3 {
+    width: 700px;
+    min-width: 700px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;

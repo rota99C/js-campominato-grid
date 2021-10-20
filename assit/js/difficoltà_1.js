@@ -6,16 +6,55 @@
 //con difficoltà 2 => tra 1 e 81
 //con difficoltà 3 => tra 1 e 49
 
+let contenitore = document.getElementById("contenitore")
+
+document.querySelector(".btn1").addEventListener("click", function () {
+    contenitore.className = 'container_1';
+
+})
 
 
 
-let container = document.querySelector('.container_1')
+
+//prima_difficoltà
+
+let container_1 = document.querySelector('.container_1')
 
 for (let index = 0; index < 100; index++) {
     const elGriglia = document.createElement('div')
     elGriglia.className = 'cella'
-    console.log(elGriglia);
-    container.append(elGriglia)
+    container_1.append(elGriglia)
+    elGriglia.addEventListener("click", function () {
+        elGriglia.classList.add("azzurro");
+    })
+
+}
+
+
+
+//seconda difficoltà
+
+let container_2 = document.querySelector('.container_2')
+
+for (let index = 0; index < 81; index++) {
+    const elGriglia = document.createElement('div')
+    elGriglia.className = 'cella'
+    container_2.append(elGriglia)
+    elGriglia.addEventListener("click", function () {
+        elGriglia.classList.add("azzurro");
+    })
+
+}
+
+
+//terza difficoltà
+
+let container_3 = document.querySelector('.container_3')
+
+for (let index = 0; index < 49; index++) {
+    const elGriglia = document.createElement('div')
+    elGriglia.className = 'cella'
+    container_3.append(elGriglia)
     elGriglia.addEventListener("click", function () {
         elGriglia.classList.add("azzurro");
     })
